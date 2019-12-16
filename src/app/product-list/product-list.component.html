@@ -1,0 +1,24 @@
+
+
+<div class="container">
+    <h2>Product List for Category: {{products.cid}}</h2>            
+    <table class="table table-striped bg-secondary ">
+      <thead>
+        <tr>
+            <th>Product Id</th>
+            <th>Product Name</th>
+          <th>Category Id</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let p of products.products">
+            <td>{{p.pid}}</td>
+            <td>{{p.pname}}</td>
+            <td>{{products.cid}}</td>  
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  

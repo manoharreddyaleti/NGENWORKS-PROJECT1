@@ -1,0 +1,25 @@
+
+
+<div class="container mt-4">
+    <h2>Category List</h2>            
+    <table class="table table-hover mt-4">
+      <thead>
+        <tr>
+          <th>Category Id</th>
+          <th>Category name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let category of categories;let ind=index" (click)="findProducts(ind)">
+          <td>{{category.cid}}</td>
+          <td>{{category.cname}}</td>
+         
+        </tr>
+       
+      </tbody>
+    </table>
+  </div>
+
+<div class="products-list">
+  <app-product-list [products]="products"></app-product-list>
+</div>
